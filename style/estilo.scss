@@ -1,0 +1,239 @@
+$colormenu: rgb(43, 41, 48);
+$font-family: 'Roboto', sans-serif; 
+
+@mixin texto{
+    text-align: center;
+    font-family: $font-family;
+    font-size: 16px;
+    color: rgb(139, 139, 139)
+
+}
+
+@mixin titulo {
+    font: {
+        family:$font-family;
+        size: 40px;
+    }
+}
+
+/* BODY */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* HEADER */
+
+.menu {
+    background-color: $colormenu;
+    width: auto;
+    height: 60px;
+    position: fixed;
+    position: center;
+    z-index: 0;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    font-size: 0;
+    overflow: hidden;    
+    padding: {
+        top: 15px;
+        bottom: 10px;
+    }
+ 
+    .menu__logo{
+        height: 50px;
+        margin-top: 2.5px;
+    }
+
+    .menu__secciones{
+        margin: {
+        left: 750px;
+        top: -35px;
+        right: 30px
+        }
+
+        display: flex;
+
+        justify: {
+        content: flex-end;
+        content: space-between; 
+        }
+}
+
+    a{
+        color: rgb(226, 226, 226);
+        text-decoration:none;
+       
+        font: {
+        family: 'Roboto', sans-serif; 
+        size: 16px; 
+        }
+    }
+
+    a:hover{
+        color: rgb(93, 165, 233);
+    }
+}
+
+
+/* HOME */
+
+.foto{
+    width: 100%;
+    height: auto;
+    margin-bottom: -60px; 
+    position: static;
+    z-index: 0;
+}
+
+/* PAGE ABERTURAS*/
+
+.carousel-inner img {
+    width: 100%;
+    margin: {
+        top: 100px;
+        bottom: 50px;
+    }
+     transition: 1s;   
+ }
+
+ 
+
+
+
+/* PAGE CALIDAD */
+
+.titlinea{
+    margin-top: 120px;
+    height: 50px;
+    background-color:$colormenu;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    font: {
+        family: $font-family;
+        size: 30px;
+        }
+}
+
+.fotolinea{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.textlinea{
+    margin: {
+    top: 50px;
+    left: 300px;
+    right: 200px;
+    bottom: 50px;
+    }
+    width: 60%;
+    @include texto();
+}
+
+         
+/* PAGE EMPRESA */
+
+
+.fotoempresa{
+    
+    float: left;
+    margin: {
+    right: 100px;
+    bottom: 50px;
+    left: -100px;
+    }
+    transition: 2s;
+}
+
+
+.contenidoempresa{
+
+    align-content: center;
+    align-items:center;
+    margin: {
+        top:150px;
+    }
+   
+    .tituloempresa{
+        display: flex;
+        justify-content: center;
+        margin: {
+        bottom: 30px;
+        right: 160px
+        }
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+        @include titulo();
+    }
+
+    .textoempresa{
+        line-height: 20px;
+        width: 80%;
+        margin-left: 120px;
+        @include texto()
+    }
+
+}
+
+/* CONTACTO */
+
+.titulocontacto{
+    margin:  {
+    top: 100px;
+    left: 120px;
+    }
+    @include titulo();
+}
+
+
+
+.form-group {
+    color: rgb(103, 103, 104);
+    font-size: 16px;
+    font-family: $font-family;
+
+}
+
+button{
+    transition: 5s;
+}
+
+/* FOOTER */
+
+.footerhome {
+    background-color:$colormenu;
+    width: auto;
+    height: 50px;
+    color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-left: 1220px;
+    padding-right: 50px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+footer{
+    background-color:$colormenu;
+    width: auto;
+    height: 50px;
+    color: white;
+
+    padding-top: 20px;
+    padding-left: 1220px;
+    padding-right: 50px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
