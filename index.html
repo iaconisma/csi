@@ -8,16 +8,18 @@
     <meta name="keywords" content="aberturas, aluminio, ventanas, puertas, ventana, corrediza, batiente, oscilante">
 
     <title> CSI Aberturas</title>
-    <!-- FUENTES -->
-    
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- FONTS -->
+    <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Sen -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP -->
-   
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style/estilo.css">
@@ -25,45 +27,107 @@
 
 </head>
 <body>
-    <header>
-        <div class="menu">
-        <ul>
-            <img class="menu__logo" src="./imagenes/csi.png" alt="logo">
-        <ul class="menu__secciones">        
-        
-        <li>
-            <a href="pages/aberturas.html" > Aberturas</a>
-        </li>
-        <li>
-            <a href="pages/calidad.html" > Calidad</a> 
-        </li>
-        <li>
-            <a href="pages/empresa.html" > Empresa</a>
-        </li>
-        <li>
-            <a href="pages/contacto.html" > Contacto</a>
-        </li>
-
-        </ul>
-    </ul>
-    
+    <!-- RESPONSIVE NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container px-5">
+            <a class="navbar-brand" href="./index.html"> <img src="./imagenes/csi.png" alt="CSI logo" style="width: 13%;" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../IDEA - IACONIS/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/aberturas.html">Aberturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/calidad.html">Calidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-</header>
+    </nav>
+        
+        
+    <!-- Header-->
+        <header class="main-header">
+            <div class="background-overlay">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 pt-4 pb-5">
+                            <div class="text-center my-5">
+                                <h1 class="display-5 fw-bolder text-white mb-2 pt-5 pb-3">Aberturas de Aluminio</h1>
+                                <p class="lead text-white-50 mb-4">Más de 30 años en el rubro, brindando un servicio de excelencia. Trabajamos de manera personalizada y ofrecemos productos fabricados con materia prima de primera calidad porque sabemos la importancia que tiene tu hogar.</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center pt-4 pb-5">
+                                    <a class="btn btn-primary btn-lg px-5 me-sm-3" href="./pages/contacto.html">Pedir Presupuesto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+   
+
 <main>
-    <img src="./imagenes/18.jpg" alt="foto ventanas" class="foto" >
-    <div class="cartel">
-        <div  class="textcartel"> SOLICITA TU <br>
-        PRESUPUESTO <br> <br>
-        > </div>
-    </div>
+     <!-- Features section-->
+     <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="icons-home"><i> <img src="./imagenes/icono-ventana.svg" alt="icono ventana"></i></div>
+                    <h2 class="h4 fw-bolder pt-2">Aberturas</h2>
+                    <p>Contamos con un stock de medidas estándars de diferentes tipos de modelos de aberturas. Enterate más haciendo click aquí abajo.</p>
+                    <a class="text-decoration-none" href="./pages/aberturas.html">
+                        Ver tienda
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="icons-home"><i> <img src="./imagenes/icono-obra.svg" alt="icono ventana"></i> </div>
+                    <h2 class="h4 fw-bolder pt-2">Obras </h2>
+                    <p>Tenemos experiencia en obras de altura y de gran magnitud en cuanto a cantidad de fabricación y colocación. </p>
+                    <a class="text-decoration-none" href="./pages/contacto.html">
+                        Contacto
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icons-home"><i> <img src="./imagenes/icono-metro.svg" alt="icono ventana"></i> </div>
+                    <h2 class="h4 fw-bolder pt-2">Personalización</h2>
+                    <p>Fabricamos aberturas personalizadas según las medidas que requiera el cliente. También realizamos colocaciones</p>
+                    <a class="text-decoration-none" href="./pages/contacto.html">
+                        Pedir presupuesto
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
         
 </main>
 
-<footer class="footerhome" >
-    <a href="https://www.instagram.com/csi.aberturas" target="_blank" > <img src="./imagenes/logo ig.png" alt="Logo ig"> </a>
-    <a href="https://www.facebook.com/aberturas.csi" target="_blank" > <img src="./imagenes/logo fb.png" alt="logo fb"></a>
+<!-- FOOTER  -->
+<footer class="footer text-center">
+    <div class="container px-4 px-lg-5">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark mr-4" href="https://www.facebook.com/aberturas.csi" target="_blank"><i class="icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark " href="https://www.instagram.com/csi.aberturas/" target="_blank"><i class="icon-social-instagram"></i></a>
+            </li>
+               
+        </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Alexandra Iaconis 2021</p>
+            <p class="text-muted small mb-0"> Buenos Aires, Argentina</p>
+    </div>
 </footer>
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </body>

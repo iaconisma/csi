@@ -9,95 +9,145 @@
     <meta name="keywords" content="aberturas, aluminio, ventanas, puertas, ventana, corrediza, batiente, oscilante">
 
     <title>Aberturas</title>
-
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
     
-    <!-- BOOTSTRAP
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
-    <script src="../js/bootstrap.min.js" ></script>
-  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
+     <!-- FONTS -->
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Sen -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
 
-     <!--CSS -->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/estilo.css">
 
 </head>
 
 <body>
-
-<header>
-    <div class="menu">
-    <ul>
-        <img class="menu__logo" src="../imagenes/csi.png" alt="logo">
-
-        <ul class="menu__secciones">
-            <li>
-                <a href="../index.html"> Inicio</a>
-            </li>
-            <li> 
-                <a href="calidad.html">Calidad</a> 
-            </li>
-            <li>
-                <a href="empresa.html">Empresa</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>    
-
-    </ul>
-    </div>
-</header>
-
-<main>
-        <div id="demo" class="carousel slide" data-ride="carousel">
-
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-           
-
-        <div  class="carousel-inner"><!--con carousel-inner crea el slide-->
-            <div class="carousel-item active"><!--con carousel-item especificamos el contenido de cada item -->
-                <img src="../imagenes/Z1.jpg" alt="Item0" >
-            </div>
-            <div class="carousel-item">
-                <img src="../imagenes/z2.jpg" alt="Item1" >
-            </div>
-            <div class="carousel-item">
-                <img src="../imagenes/4.jpg" alt="Item2" >
+     <!-- RESPONSIVE NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="../index.html"> <img src="../imagenes/csi.png" alt="CSI logo" style="width: 13%;" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/aberturas.html">Aberturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/calidad.html">Calidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev"> 
-           <!--con carousel-control-prev agregamos un boton atras a la izquierda-->
-            <span class="carousel-control-prev-icon"></span>
-            <!--con esta clase agregamos el icono del boton siguiente-->
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-           <!--con carousel-control-next agregamos un boton siguiente a la derecha-->
-            <span class="carousel-control-next-icon"></span>
-            <!--con esta clase agregamos el icono del boton siguiente-->
-        </a>
+    
+<main>
+    <div class="title-aberturas">
+        <h3 class=>Aberturas</h3>
+        <p>Contamos con stock de medidas estándar, para medidas personalizadas consultarnos por mensaje</p>
     </div>
+    <!-- PRODUCTOS -->
+    <section class=" container pb-5 pt-5">
+        <div class="row aberturas">
+    
+            <div class="cards col-lg-4">
+                <div class="card " style="width: 18rem;">
+                    <img src="../imagenes/ventiluz.jpg" class="img-fluid card-img-top " alt="ventiluz">
+                    <div class="card-body">
+                        <h5 class="card-title">$14.300,00</h5>
+                        <p class="card-text">Ventiluz C/brazo De Empuje 70x50 Cm Laminado 3+3 Alum 100%</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-915102668-ventiluz-cbrazo-de-empuje-70x50-cm-laminado-33-alum-100-_JM?searchVariation=81181826648#searchVariation=81181826648&position=1&search_layout=stack&type=item&tracking_id=2c37dd6b-b380-40ec-aa43-098612896917" target="_blank" class="btn btn-primary" >Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/corrediza.jpg" class="img-fluid card-img-top" alt="corrediza">
+                    <div class="card-body">
+                        <h5 class="card-title">$20.695,50</h5>
+                        <p class="card-text">Ventana Corrediza Linea Modena 100x100 Vidrio 4 Mm</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-749624463-ventana-corrediza-linea-modena-100x100-vidrio-4-mm-_JM?searchVariation=38600342989#searchVariation=38600342989&position=3&search_layout=stack&type=item&tracking_id=2c37dd6b-b380-40ec-aa43-098612896917" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-lg-4 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/banderola.jpg" class="img-fluid card-img-top" alt="banderola">
+                    <div class="card-body">
+                     <h5 class="card-title">$15.400,00</h5>
+                        <p class="card-text">Banderola Módena 50x100 Cm Float 4 Mm Aluminio 100%</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-800276011-banderola-modena-50x100-cm-float-4-mm-aluminio-100-_JM?searchVariation=40400903915#searchVariation=40400903915&position=6&search_layout=stack&type=item&tracking_id=2c37dd6b-b380-40ec-aa43-098612896917" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
 
+        <div class="row aberturas pt-5">
+    
+            <div class="cards col-lg-4">
+                <div class="card " style="width: 18rem;">
+                    <img src="../imagenes/puerta.jpg" class="img-fluid card-img-top " alt="puerta">
+                    <div class="card-body">
+                        <h5 class="card-title">$62.000,00</h5>
+                        <p class="card-text">Puerta Módena De 2 Hojas 120x200 Laminado 3+3</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-835740239-puerta-modena-de-2-hojas-120x200-laminado-33-_JM?searchVariation=49576763887#searchVariation=49576763887&position=9&search_layout=stack&type=item&tracking_id=037dbeb8-782a-449f-bbcf-7aa030d7352c" target="_blank" class="btn btn-primary" >Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/puerta.jpg" class="img-fluid card-img-top" alt="puerta">
+                    <div class="card-body">
+                        <h5 class="card-title">$55.380,00</h5>
+                        <p class="card-text">Puerta De Rebatir Módena 2 Hojas 120x200 Float 4mm</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-835903881-puerta-de-rebatir-modena-2-hojas-120x200-float-4mm-_JM?searchVariation=49631243789#searchVariation=49631243789&position=10&search_layout=stack&type=item&tracking_id=037dbeb8-782a-449f-bbcf-7aa030d7352c" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-lg-4 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="../imagenes/corrediza.jpg" class="img-fluid card-img-top" alt="banderola">
+                    <div class="card-body">
+                     <h5 class="card-title">$17.848,00</h5>
+                        <p class="card-text">Ventana Corrediza Linea Modena Medida 120x40 Float 4mm</p>
+                        <a href="https://articulo.mercadolibre.com.ar/MLA-911275542-ventana-corrediza-linea-modena-medida-120x40-float-4mm-_JM?searchVariation=78334264641#searchVariation=78334264641&position=42&search_layout=stack&type=item&tracking_id=037dbeb8-782a-449f-bbcf-7aa030d7352c" target="_blank" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+    </section>
 
 
 </main>
 
-<footer class="footer">
-    <a href="https://www.instagram.com/csi.aberturas/" target="_blank" > <img src="../imagenes/logo ig.png" alt="Logo ig"> </a>
-    <a href="https://www.facebook.com/aberturas.csi" target="_blank" > <img src="../imagenes/logo fb.png" alt="logo fb"></a>
+<!-- FOOTER  -->
+<footer class="footer text-center">
+    <div class="container px-4 px-lg-5">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark mr-4" href="https://www.facebook.com/aberturas.csi" target="_blank"><i class="icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark " href="https://www.instagram.com/csi.aberturas/" target="_blank"><i class="icon-social-instagram"></i></a>
+            </li>
+               
+        </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Alexandra Iaconis 2021</p>
+            <p class="text-muted small mb-0"> Buenos Aires, Argentina</p>
+    </div>
 </footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </body>

@@ -8,39 +8,70 @@
     <meta name="keywords" content="aberturas, aluminio, ventanas, puertas, ventana, corrediza, batiente, oscilante">
 
     <title>Empresa</title>
-     <!-- FUENTES -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <!-- CSS--> 
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    
+    <!-- FONTS -->
+        <!-- Font Roboto -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Font Sen -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../style/estilo.css">
+
+
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <ul>
-                <img class="menu__logo" src="../imagenes/csi.png" alt="logo">
-                <ul class="menu__secciones">
-                    <li>
-                        <a href="../index.html"> Inicio</a>
-                    </li>
-                    <li>
-                        <a href="aberturas.html">Aberturas</a>
-                    </li>
-                    <li> 
-                        <a href="calidad.html">Calidad</a> 
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+     <!-- RESPONSIVE NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="../index.html"> <img src="../imagenes/csi.png" alt="CSI logo" style="width: 13%;" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/aberturas.html">Aberturas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/calidad.html">Calidad</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
-            </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
-        
+        <section class="showcase">
+            <div class="container-fluid pb-0">
+                
+                <div class="row g-0">
+                    <div class="col-lg-6  text-white showcase-img" style="background-image: url(../imagenes/11.jpg)"></div>
+                    <div class="col-lg-6  my-auto showcase-text">
+                        <h2>CSI Aberturas</h2>
+                        <p class="lead ">Somos una empresa familiar con más de 30 años de trayectoria en aberturas de aluminio .
+
+                            Nos encargamos de brindar un servicio de excelencia, adaptado a las necesidades de cada cliente y dentro de lineamientos estéticos y modernos.
+                            
+                             Trabajamos con materias primas de primera calidad ya que conocemos de la importancia que requiere equipar tu vivienda con materiales que cumplan con los fines necesarios para habitar la misma.
+                            
+                             En CSI nos basamos en un trato personalizado, asesoramiento confiable en diseño, y calidad en todos nuestros productos.
+                            
+                            Brindamos un servicio previo de apoyo técnico, medición, colocación y presupuestos sin costo.
+                            
+                            También contamos con la tecnología más innovadora disponible hoy día para la renovación de aberturas… Que soluciona tus problemas de climatización del hogar, ruido, filtraciones y seguridad.</p>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+
+
+<!--  
         <div>
             <img src="../imagenes/11.jpg" alt="fotoempresa" class="fotoempresa">
         </div>  
@@ -69,11 +100,29 @@
     
 
     </main>
+-->
+<!-- FOOTER  -->
+<footer class="footer text-center">
+    <div class="container px-4 px-lg-5">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark mr-4" href="https://www.facebook.com/aberturas.csi" target="_blank"><i class="icon-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-dark " href="https://www.instagram.com/csi.aberturas/" target="_blank"><i class="icon-social-instagram"></i></a>
+            </li>
+               
+        </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Alexandra Iaconis 2021</p>
+            <p class="text-muted small mb-0"> Buenos Aires, Argentina</p>
+    </div>
+</footer>
 
-    <footer class="footerhome" >
-        <a href="https://www.instagram.com/csi.aberturas/" target="_blank" > <img src="../imagenes/logo ig.png" alt="Logo ig"> </a>
-        <a href="https://www.facebook.com/aberturas.csi" target="_blank" > <img src="../imagenes/logo fb.png" alt="logo fb"></a>
-    </footer>
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
