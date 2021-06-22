@@ -1,5 +1,12 @@
-/* BODY */
 /* NAV */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 .navbar {
   background-color: black;
 }
@@ -8,6 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* BODY */
 body {
   background-color: white;
 }
@@ -26,65 +34,12 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* MAIN */
-/* no va mas 
-.menu {
-    background-color: $colormenu;
-    width: auto;
-    height: 60px;
-    position: fixed;
-    position: center;
-    z-index: 0;
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    font-size: 0;
-    overflow: hidden;    
-    padding: {
-        top: 15px;
-        bottom: 10px;
-    }
-
-    .menu__logo{
-        height: 50px;
-        margin-top: 2.5px;
-    }
-
-    .menu__secciones{
-        margin: {
-        left: 750px;
-        top: -35px;
-        right: 30px
-        }
-
-        display: flex;
-
-        justify: {
-        content: flex-end;
-        content: space-between; 
-        }
-}
-
-    a{
-        color: rgb(226, 226, 226);
-        text-decoration:none;
-
-        font: {
-        family: 'Roboto', sans-serif; 
-        size: 16px; 
-        }
-    }
-
-    a:hover{
-        color: rgb(93, 165, 233);
-    }
-}
-
-*/
 /* PAGE ABERTURAS*/
 .title-aberturas {
   padding-top: 4rem;
-  padding-left: 8rem;
+  padding-left: 6rem;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
 }
 
 .aberturas {
@@ -93,48 +48,39 @@ body {
   justify-content: center;
 }
 
+.img-fluid {
+  height: auto;
+}
+
 /* PAGE CALIDAD */
 .carousel-inner img {
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  transition: 1s;
-}
-
-.titlinea {
-  margin-top: 120px;
-  height: 50px;
-  background-color: #2b2930;
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-}
-
-.fotolinea {
-  display: flex;
-  justify-content: space-around;
   margin-top: 50px;
-  height: 400px;
+  margin-bottom: 50px;
+  transition: 0.5s;
 }
 
-.textlinea {
-  margin-top: 50px;
-  margin-left: 300px;
-  margin-right: 200px;
-  margin-bottom: 50px;
-  width: 60%;
-  text-align: center;
+p {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #8b8b8b;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.img-calidad {
+  height: 60rem;
+}
+
+.img-aluar {
+  height: 40rem;
 }
 
 /* PAGE EMPRESA */
 .showcase {
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-transition: 2s;
 }
 .showcase .showcase-text {
   padding: 3rem;
@@ -144,52 +90,10 @@ body {
   min-height: 30rem;
   background-size: cover;
   min-height: 360px;
-  width: 564px;
+  min-width: 564px;
   transition: 2s;
 }
 
-/*  
-.fotoempresa{
-
-    float: left;
-    margin: {
-    right: 100px;
-    bottom: 50px;
-    left: -100px;
-    }
-    transition: 2s;
-}
-
-
-.contenidoempresa{
-
-    align-content: center;
-    align-items:center;
-    margin: {
-        top:100px;
-}
-
-    .tituloempresa{
-        display: flex;
-        justify-content: center;
-        margin: {
-        bottom: 30px;
-        right: 160px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        text-align: center;
-        @include titulo();
-    }
-
-    .textoempresa{
-        line-height: 20px;
-        width: 80%;
-        margin-left: 120px;
-        @include texto()
-    }
-
-}
-*/
 /* CONTACTO */
 .title-contact {
   text-align: left;
@@ -207,30 +111,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*  
-.titulocontacto{
-    margin:  {
-    top: 100px;
-    left: 120px;
-    }
-    @include titulo();
-}
-
-
-
-.form-group {
-    color: rgb(103, 103, 104);
-    font-size: 16px;
-    font-family: $font-family;
-    position: relative;
-
-}
-
-button{
-    transition: 5s;
-}
-
-*/
 /* FOOTER  */
 .footer.footer {
   padding-top: 3rem;

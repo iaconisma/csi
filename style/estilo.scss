@@ -16,10 +16,15 @@ $font-family: 'Roboto', sans-serif;
     }
 }
 
-/* BODY */
-
 /* NAV */
-
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
 .navbar {
     background-color: black;
     .nav-item {
@@ -30,7 +35,7 @@ $font-family: 'Roboto', sans-serif;
     }
 }
 
-
+/* BODY */
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -49,71 +54,14 @@ body {
 
 .background-overlay {
     background: rgba(0, 0, 0, 0.4);
-    
 }
-
-/* MAIN */
-
-
-/* no va mas 
-.menu {
-    background-color: $colormenu;
-    width: auto;
-    height: 60px;
-    position: fixed;
-    position: center;
-    z-index: 0;
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    font-size: 0;
-    overflow: hidden;    
-    padding: {
-        top: 15px;
-        bottom: 10px;
-    }
- 
-    .menu__logo{
-        height: 50px;
-        margin-top: 2.5px;
-    }
-
-    .menu__secciones{
-        margin: {
-        left: 750px;
-        top: -35px;
-        right: 30px
-        }
-
-        display: flex;
-
-        justify: {
-        content: flex-end;
-        content: space-between; 
-        }
-}
-
-    a{
-        color: rgb(226, 226, 226);
-        text-decoration:none;
-       
-        font: {
-        family: 'Roboto', sans-serif; 
-        size: 16px; 
-        }
-    }
-
-    a:hover{
-        color: rgb(93, 165, 233);
-    }
-}
-
-*/
 
 /* PAGE ABERTURAS*/
 .title-aberturas{
     padding-top: 4rem;
-    padding-left: 8rem;
+    padding-left: 6rem;
+    font-family: $font-family;
+    text-align: left;
 }
 
 .aberturas{
@@ -121,49 +69,36 @@ body {
     justify-content: space-between;
     justify-content: center;
 }
-
+.img-fluid{
+    height: auto;
+}
 
 /* PAGE CALIDAD */
 .carousel-inner img {
     width: 100%;
     margin: {
-        top: 100px;
+        top: 50px;
         bottom: 50px;
     }
-     transition: 1s;   
+     transition: 0.5s;   
  }
 
+ p{
+    font-family: $font-family;
+ }
 
-.titlinea{
-    margin-top: 120px;
-    height: 50px;
-    background-color:$colormenu;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 20px;
-    font: {
-        family: $font-family;
-        size: 30px;
-        }
+ h2{
+     font-family: $font-family;
+ }
+
+.img-calidad{
+    height: 60rem;
 }
 
-.fotolinea{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    height: 400px;
+.img-aluar{
+    height: 40rem;
 }
 
-.textlinea{
-    margin: {
-    top: 50px;
-    left: 300px;
-    right: 200px;
-    bottom: 50px;
-    }
-    width: 60%;
-    @include texto();
-}
 
          
 /* PAGE EMPRESA */
@@ -172,65 +107,25 @@ body {
     padding: {
         top: 80px;
         bottom: 80px;
+        transition: 2s;
     }
 
- .showcase-text {
-    padding: 3rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-    min-height: 360px;
-    width: 564px;
-    transition: 2s;
-  }
-
-}
-/*  
-.fotoempresa{
-    
-    float: left;
-    margin: {
-    right: 100px;
-    bottom: 50px;
-    left: -100px;
-    }
-    transition: 2s;
-}
-
-
-.contenidoempresa{
-
-    align-content: center;
-    align-items:center;
-    margin: {
-        top:100px;
-}
-   
-    .tituloempresa{
-        display: flex;
-        justify-content: center;
-        margin: {
-        bottom: 30px;
-        right: 160px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        text-align: center;
-        @include titulo();
+    .showcase-text {
+        padding: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    .textoempresa{
-        line-height: 20px;
-        width: 80%;
-        margin-left: 120px;
-        @include texto()
+    .showcase-img {
+        min-height: 30rem;
+        background-size: cover;
+        min-height: 360px;
+        min-width: 564px;
+        transition: 2s;
     }
-
 }
-*/
+
 /* CONTACTO */
+
 .title-contact{
     text-align: left;
     font-family: $font-family;
@@ -241,40 +136,11 @@ body {
     padding-left: 10%;
     padding-top:2rem;
     align-self: center;
-  
-    
-   
 }
 
 .input-group{
     font-family: $font-family;
 }
-
-
-/*  
-.titulocontacto{
-    margin:  {
-    top: 100px;
-    left: 120px;
-    }
-    @include titulo();
-}
-
-
-
-.form-group {
-    color: rgb(103, 103, 104);
-    font-size: 16px;
-    font-family: $font-family;
-    position: relative;
-
-}
-
-button{
-    transition: 5s;
-}
-
-*/
 
 /* FOOTER  */
 
